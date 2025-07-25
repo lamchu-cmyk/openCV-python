@@ -32,7 +32,7 @@ def main():
     if not cap.isOpened():
         raise SystemExit("[ERROR] Unable to open webcam")
 
-    print("[INFO] Press 'q' to quit.")
+    print("[INFO] Press 'Ctrl + C' to quit.")
     while True:
         ret, frame = cap.read()
         if not ret:
